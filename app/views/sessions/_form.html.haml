@@ -1,0 +1,10 @@
+= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .form-group
+    %label.control-label{:for => "usuario"} Usuário
+    = f.input :username, label: false, required: false, autofocus: true
+    %span.help-block.small Your unique username to app
+  .form-group
+    %label.control-label{:for => "senha"} Senha
+    = f.input :password, required: false, label: false
+    %span.help-block.small Your unique username to app
+  = f.submit "Log in", class: 'btn btn-success btn-block'

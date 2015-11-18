@@ -38,5 +38,6 @@ gem 'author',         path: 'engines/author'
 gem 'billing',        path: 'engines/billing'
 gem 'study',          path: 'engines/study'
 gem 'administrator',  path: 'engines/administrator'
+gem 'dashboard',      path: 'engines/dashboard'
 
 

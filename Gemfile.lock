@@ -17,6 +17,12 @@ PATH
       rails (~> 4.2.5)
 
 PATH
+  remote: engines/dashboard
+  specs:
+    dashboard (0.0.1)
+      rails (~> 4.2.5)
+
+PATH
   remote: engines/portal
   specs:
     portal (0.0.1)
@@ -220,6 +226,7 @@ DEPENDENCIES
   billing!
   byebug
   carrierwave
+  dashboard!
   devise
   haml-rails
   jquery-rails
