@@ -72,6 +72,11 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.0)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -157,6 +162,10 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.4.2)
+    redactor-rails (0.5.0)
+      devise
+      mime-types
+      orm_adapter
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     ruby_parser (3.6.6)
@@ -210,6 +219,7 @@ DEPENDENCIES
   author!
   billing!
   byebug
+  carrierwave
   devise
   haml-rails
   jquery-rails
@@ -217,6 +227,7 @@ DEPENDENCIES
   pundit
   rails (= 4.2.5)
   rails_12factor
+  redactor-rails
   sass-rails (~> 5.0)
   simple_form
   spring

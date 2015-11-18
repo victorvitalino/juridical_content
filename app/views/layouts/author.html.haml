@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Conteúdo Jurídico :: Autor
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .splash{:style => "display: none;"}
+      .color-line
+      .splash-title
+        %h1 Homer - Responsive Admin Theme
+        %p Special AngularJS Admin Theme for small and medium webapp with very clean and aesthetic style and feel.
+        %img{:height => "64", :src => "./HOMER _ WebApp admin theme_files/loading-bars.svg", :width => "64"}/
+    /[if lt IE 7]
+      <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    / Header
+    = render 'layouts/author/header'
+    / Navigation
+    = render 'layouts/author/aside'
+    / Main Wrapper
+    #wrapper
+      .content.animate-panel
+        = yield

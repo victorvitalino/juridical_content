@@ -1,0 +1,434 @@
+#wrapper
+  .content.animate-panel
+    .row
+      .col-lg-12.text-center.m-t-md
+        %h2
+          Bem-vindo, Usuário.
+        %p
+          Special
+          %strong Admin Theme
+          for small, medium and large webapp with very clean and
+          aesthetic style and feel.
+    .row
+      .col-lg-12
+        .hpanel
+          .panel-heading
+            .panel-tools
+              %a.showhide
+                %i.fa.fa-chevron-up
+              %a.closebox
+                %i.fa.fa-times
+            Dashboard information and statistics
+          .panel-body
+            .row
+              .col-md-3.text-center
+                .small
+                  %i.fa.fa-bolt
+                  Page views
+                %div
+                  %h1.font-extra-bold.m-t-xl.m-b-xs
+                    226,802
+                  %small Page views in last month
+                .small.m-t-xl
+                  %i.fa.fa-clock-o
+                  Data from January
+              .col-md-6
+                .text-center.small
+                  %i.fa.fa-laptop
+                  Active users in current month (December)
+                .flot-chart{:style => "height: 160px"}
+                  #flot-line-chart.flot-chart-content{:style => "padding: 0px; position: relative;"}
+                    %canvas.flot-base{:height => "160", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 626px; height: 160px;", :width => "626"}
+                    .flot-text{:style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"}
+                      .flot-x-axis.flot-x1-axis.xAxis.x1Axis{:style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"}
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 11px; text-align: center;"} 0.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 96px; text-align: center;"} 1.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 182px; text-align: center;"} 2.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 268px; text-align: center;"} 3.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 353px; text-align: center;"} 4.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 439px; text-align: center;"} 5.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 525px; text-align: center;"} 6.0
+                        .flot-tick-label.tickLabel{:style => "position: absolute; max-width: 78px; top: 144px; left: 611px; text-align: center;"} 7.0
+                      .flot-y-axis.flot-y1-axis.yAxis.y1Axis{:style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"}
+                        .flot-tick-label.tickLabel{:style => "position: absolute; top: 132px; left: 1px; text-align: right;"} 30
+                        .flot-tick-label.tickLabel{:style => "position: absolute; top: 99px; left: 1px; text-align: right;"} 40
+                        .flot-tick-label.tickLabel{:style => "position: absolute; top: 66px; left: 1px; text-align: right;"} 50
+                        .flot-tick-label.tickLabel{:style => "position: absolute; top: 33px; left: 1px; text-align: right;"} 60
+                        .flot-tick-label.tickLabel{:style => "position: absolute; top: 1px; left: 1px; text-align: right;"} 70
+                    %canvas.flot-overlay{:height => "160", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 626px; height: 160px;", :width => "626"}
+              .col-md-3.text-center
+                .small
+                  %i.fa.fa-clock-o
+                  Active duration
+                %div
+                  %h1.font-extra-bold.m-t-xl.m-b-xs
+                    10 Months
+                  %small And four weeks
+                .small.m-t-xl
+                  %i.fa.fa-clock-o
+                  Last active in 12.10.2015
+          .panel-footer
+            %span.pull-right
+              You have two new messages from
+              %a{:href => ""} Monica Bolt
+            Last update: 21.05.2015
+    .row
+      .col-lg-3
+        .hpanel
+          .panel-body.text-center.h-200
+            %i.pe-7s-graph1.fa-4x
+            %h1.m-xs $1 206,90
+            %h3.font-extra-bold.no-margins.text-success
+              All Income
+            %small Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum.
+          .panel-footer
+            This is standard panel footer
+      .col-lg-3
+        .hpanel.stats
+          .panel-body.h-200
+            .stats-title.pull-left
+              %h4 Users Activity
+            .stats-icon.pull-right
+              %i.pe-7s-share.fa-4x
+            .m-t-xl
+              %h3.m-b-xs 210
+              %span.font-bold.no-margins
+                Social users
+              .progress.m-t-xs.full.progress-small
+                .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "55", :role => "progressbar", :style => "width: 55%"}
+                  %span.sr-only 35% Complete (success)
+              .row
+                .col-xs-6
+                  %small.stats-label Pages / Visit
+                  %h4 7.80
+                .col-xs-6
+                  %small.stats-label % New Visits
+                  %h4 76.43%
+          .panel-footer
+            This is standard panel footer
+      .col-lg-3
+        .hpanel.stats
+          .panel-body.h-200
+            .stats-title.pull-left
+              %h4 Page Views
+            .stats-icon.pull-right
+              %i.pe-7s-monitor.fa-4x
+            .m-t-xl
+              %h1.text-success 860k+
+              %span.font-bold.no-margins
+                Social users
+              %br/
+              %small
+                Lorem Ipsum is simply dummy text of the printing and
+                = succeed "." do
+                  %strong
+                    typesetting
+                    industry
+          .panel-footer
+            This is standard panel footer
+      .col-lg-3
+        .hpanel.stats
+          .panel-body.h-200
+            .stats-title.pull-left
+              %h4 Today income
+            .stats-icon.pull-right
+              %i.pe-7s-cash.fa-4x
+            .clearfix
+            .flot-chart
+              #flot-income-chart.flot-chart-content{:style => "padding: 0px; position: relative;"}
+                %canvas.flot-base{:height => "60", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 267px; height: 60px;", :width => "267"}
+                %canvas.flot-overlay{:height => "60", :style => "direction: ltr; position: absolute; left: 0px; top: 0px; width: 267px; height: 60px;", :width => "267"}
+            .m-t-xs
+              .row
+                .col-xs-5
+                  %small.stat-label Today
+                  %h4 $230,00
+                .col-xs-7
+                  %small.stat-label Last week
+                  %h4
+                    $7 980,60
+                    %i.fa.fa-level-up.text-success
+          .panel-footer
+            This is standard panel footer
+    .row
+      .col-lg-3
+        .hpanel.stats
+          .panel-heading
+            .panel-tools
+              %a.showhide
+                %i.fa.fa-chevron-up
+              %a.closebox
+                %i.fa.fa-times
+            Last active
+          .panel-body.list
+            .stats-title.pull-left
+              %h4 Activity
+            .stats-icon.pull-right
+              %i.pe-7s-science.fa-4x
+            .m-t-xl
+              %span.font-bold.no-margins
+                Social users
+              %br/
+              %small
+                Lorem Ipsum is simply dummy text of the printing simply all dummy text. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+            .row.m-t-md
+              .col-lg-6
+                %h3.no-margins.font-extra-bold.text-success 300,102
+                .font-bold
+                  98%
+                  %i.fa.fa-level-up.text-success
+              .col-lg-6
+                %h3.no-margins.font-extra-bold.text-success 280,200
+                .font-bold
+                  98%
+                  %i.fa.fa-level-up.text-success
+            .row.m-t-md
+              .col-lg-6
+                %h3.no-margins.font-extra-bold 120,108
+                .font-bold
+                  38%
+                  %i.fa.fa-level-down
+              .col-lg-6
+                %h3.no-margins.font-extra-bold 450,600
+                .font-bold
+                  28%
+                  %i.fa.fa-level-down
+          .panel-footer
+            This is standard panel footer
+      .col-lg-6
+        .hpanel
+          .panel-heading
+            .panel-tools
+              %a.showhide
+                %i.fa.fa-chevron-up
+              %a.closebox
+                %i.fa.fa-times
+            Recently active projects
+          .panel-body.list
+            .table-responsive.project-list
+              %table.table.table-striped
+                %thead
+                  %tr
+                    %th{:colspan => "2"} Project
+                    %th Completed
+                    %th Task
+                    %th Date
+                    %th Action
+                %tbody
+                  %tr
+                    %td
+                      .icheckbox_square-green.checked{:style => "position: relative;"}
+                        %input.i-checks{:checked => "checked", :style => "position: absolute; opacity: 0;", :type => "checkbox"}/
+                        %ins.iCheck-helper{:style => "position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"}
+                    %td
+                      Contract with Zender Company
+                      %br/
+                      %small
+                        %i.fa.fa-clock-o
+                        Created 14.08.2015
+                    %td
+                      %span.pie{:style => "display: none;"} 1/5
+                      %svg.peity{:height => "16", :width => "16"}
+                        %path{:d => "M 8 0 A 8 8 0 0 1 15.60845213036123 5.52786404500042 L 8 8", :fill => "#62cb31"}
+                        %path{:d => "M 15.60845213036123 5.52786404500042 A 8 8 0 1 1 7.999999999999998 0 L 8 8", :fill => "#edf0f5"}
+                    %td
+                      %strong 20%
+                    %td Jul 14, 2013
+                    %td
+                      %a{:href => ""}
+                        %i.fa.fa-check.text-success
+                  %tr
+                    %td
+                      .icheckbox_square-green{:style => "position: relative;"}
+                        %input.i-checks{:style => "position: absolute; opacity: 0;", :type => "checkbox"}/
+                        %ins.iCheck-helper{:style => "position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"}
+                    %td
+                      There are many variations of passages
+                      %br/
+                      %small
+                        %i.fa.fa-clock-o
+                        Created 21.07.2015
+                    %td
+                      %span.pie{:style => "display: none;"} 1/4
+                      %svg.peity{:height => "16", :width => "16"}
+                        %path{:d => "M 8 0 A 8 8 0 0 1 16 8 L 8 8", :fill => "#62cb31"}
+                        %path{:d => "M 16 8 A 8 8 0 1 1 7.999999999999998 0 L 8 8", :fill => "#edf0f5"}
+                    %td
+                      %strong 40%
+                    %td Jul 16, 2013
+                    %td
+                      %a{:href => ""}
+                        %i.fa.fa-check.text-navy
+                  %tr
+                    %td
+                      .icheckbox_square-green.checked{:style => "position: relative;"}
+                        %input.i-checks{:checked => "checked", :style => "position: absolute; opacity: 0;", :type => "checkbox"}/
+                        %ins.iCheck-helper{:style => "position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"}
+                    %td
+                      Contrary to popular belief
+                      %br/
+                      %small
+                        %i.fa.fa-clock-o
+                        Created 12.06.2015
+                    %td
+                      %span.pie{:style => "display: none;"} 0.52/1.561
+                      %svg.peity{:height => "16", :width => "16"}
+                        %path{:d => "M 8 0 A 8 8 0 0 1 14.933563796318165 11.990700825968545 L 8 8", :fill => "#62cb31"}
+                        %path{:d => "M 14.933563796318165 11.990700825968545 A 8 8 0 1 1 7.999999999999998 0 L 8 8", :fill => "#edf0f5"}
+                    %td
+                      %strong 75%
+                    %td Jul 18, 2013
+                    %td
+                      %a{:href => ""}
+                        %i.fa.fa-check.text-navy
+                  %tr
+                    %td
+                      .icheckbox_square-green{:style => "position: relative;"}
+                        %input.i-checks{:style => "position: absolute; opacity: 0;", :type => "checkbox"}/
+                        %ins.iCheck-helper{:style => "position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"}
+                    %td
+                      Gamma project
+                      %br/
+                      %small
+                        %i.fa.fa-clock-o
+                        Created 06.03.2015
+                    %td
+                      %span.pie{:style => "display: none;"} 226/360
+                      %svg.peity{:height => "16", :width => "16"}
+                        %path{:d => "M 8 0 A 8 8 0 1 1 2.2452815972907922 13.55726696367198 L 8 8", :fill => "#62cb31"}
+                        %path{:d => "M 2.2452815972907922 13.55726696367198 A 8 8 0 0 1 7.999999999999998 0 L 8 8", :fill => "#edf0f5"}
+                    %td
+                      %strong 16%
+                    %td Jul 22, 2013
+                    %td
+                      %a{:href => ""}
+                        %i.fa.fa-check.text-navy
+      .col-lg-3
+        .hpanel
+          .panel-heading
+            .panel-tools
+              %a.showhide
+                %i.fa.fa-chevron-up
+              %a.closebox
+                %i.fa.fa-times
+            Activity
+          .panel-body.list
+            .pull-right
+              %a.btn.btn-xs.btn-default{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"} Today
+              %a.btn.btn-xs.btn-default{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"} Month
+            .panel-title Last Activity
+            %small.fo This is simple example
+            .list-item-container
+              .list-item
+                %h3.no-margins.font-extra-bold.text-success 2,773
+                %small Tota Messages Sent
+                .pull-right.font-bold
+                  98%
+                  %i.fa.fa-level-up.text-success
+              .list-item
+                %h3.no-margins.font-extra-bold.text-color3 4,422
+                %small Last activity
+                .pull-right.font-bold
+                  13%
+                  %i.fa.fa-level-down.text-color3
+              .list-item
+                %h3.no-margins.font-extra-bold.text-color3 9,180
+                %small Monthly income
+                .pull-right.font-bold
+                  22%
+                  %i.fa.fa-bolt.text-color3
+              .list-item
+                %h3.no-margins.font-extra-bold.text-success 1,450
+                %small Tota Messages Sent
+                .pull-right.font-bold
+                  44%
+                  %i.fa.fa-level-up.text-success
+  / Right sidebar
+  #right-sidebar.animated.fadeInRight
+    .p-m
+      %button#sidebar-close.right-sidebar-toggle.sidebar-button.btn.btn-default.m-b-md
+        %i.pe.pe-7s-close
+      %div
+        %span.font-bold.no-margins Analytics
+        %br/
+        %small Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+      .row.m-t-sm.m-b-sm
+        .col-lg-6
+          %h3.no-margins.font-extra-bold.text-success 300,102
+          .font-bold
+            98%
+            %i.fa.fa-level-up.text-success
+        .col-lg-6
+          %h3.no-margins.font-extra-bold.text-success 280,200
+          .font-bold
+            98%
+            %i.fa.fa-level-up.text-success
+      .progress.m-t-xs.full.progress-small
+        .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "25", :role => "progressbar", :style => "width: 25%"}
+          %span.sr-only 35% Complete (success)
+    .p-m.bg-light.border-bottom.border-top
+      %span.font-bold.no-margins Social talks
+      %br/
+      %small Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+      .m-t-md
+        .social-talk
+          .media.social-profile.clearfix
+            %a.pull-left
+              %img{:alt => "profile-picture", :src => "./HOMER _ WebApp admin theme_files/a1.jpg"}/
+            .media-body
+              %span.font-bold John Novak
+              %small.text-muted 21.03.2015
+              .social-content.small
+                Injected humour, or randomised words which don't look even slightly believable.
+        .social-talk
+          .media.social-profile.clearfix
+            %a.pull-left
+              %img{:alt => "profile-picture", :src => "./HOMER _ WebApp admin theme_files/a3.jpg"}/
+            .media-body
+              %span.font-bold Mark Smith
+              %small.text-muted 14.04.2015
+              .social-content
+                Many desktop publishing packages and web page editors.
+        .social-talk
+          .media.social-profile.clearfix
+            %a.pull-left
+              %img{:alt => "profile-picture", :src => "./HOMER _ WebApp admin theme_files/a4.jpg"}/
+            .media-body
+              %span.font-bold Marica Morgan
+              %small.text-muted 21.03.2015
+              .social-content
+                There are many variations of passages of Lorem Ipsum available, but the majority have
+    .p-m
+      %span.font-bold.no-margins Sales in last week
+      .m-t-xs
+        .row
+          .col-xs-6
+            %small Today
+            %h4.m-t-xs
+              $170,20
+              %i.fa.fa-level-up.text-success
+          .col-xs-6
+            %small Last week
+            %h4.m-t-xs
+              $580,90
+              %i.fa.fa-level-up.text-success
+        .row
+          .col-xs-6
+            %small Today
+            %h4.m-t-xs
+              $620,20
+              %i.fa.fa-level-up.text-success
+          .col-xs-6
+            %small Last week
+            %h4.m-t-xs
+              $140,70
+              %i.fa.fa-level-up.text-success
+      %small
+        Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+        Many desktop publishing packages and web page editors.
+  / Footer
+  %footer.footer
+    %span.pull-right
+      Example text
+    Company 2015-2020

@@ -14,6 +14,9 @@ Bundler.require(*Rails.groups)
 
 module JuridicalContent
   class Application < Rails::Application
+    
+    config.assets.paths << File.join(Rails.root, 'app', 'assets', 'templates')
+  
     config.time_zone = 'Brasilia'
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales','***','**', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de

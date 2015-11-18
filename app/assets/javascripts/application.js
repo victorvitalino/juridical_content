@@ -1,16 +1,13 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require homer/javascripts/bootstrap.min
+//= require homer/javascripts/jquery.flot
+//= require homer/javascripts/jquery.flot.resize
+//= require homer/javascripts/jquery.flot.pie
+//= require homer/javascripts/curvedLines
+//= require homer/javascripts/index
+//= require homer/javascripts/metisMenu.min
+//= require homer/javascripts/icheck.min
+//= require homer/javascripts/jquery.peity.min
+//= require homer/javascripts/index(1)
+//= require homer/javascripts/homer

@@ -14,6 +14,8 @@ gem 'pundit'
 gem 'simple_form'
 gem 'haml-rails'
 
+gem 'redactor-rails'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'byebug'

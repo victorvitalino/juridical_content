@@ -1,0 +1,69 @@
+%aside#menu
+  #navigation
+    .profile-picture
+      %a{:href => "./HOMER _ WebApp admin theme_files/HOMER _ WebApp admin theme.html"}
+        %img.img-circle.m-b{:alt => "logo", :src => "./HOMER _ WebApp admin theme_files/profile.jpg"}/
+      .stats-label.text-color
+        %span.font-extra-bold.font-uppercase Usuário nome
+        .dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://webapplayers.com/homer_admin-v1.8/index.html#"}
+            %small.text-muted
+              Autor
+              %b.caret
+          %ul.dropdown-menu.animated.fadeInRight.m-t-xs
+            %li
+              %a{:href => "http://webapplayers.com/homer_admin-v1.8/contacts.html"} Meu Perfil
+            %li
+              %a{:href => "http://webapplayers.com/homer_admin-v1.8/profile.html"} Configurações de Conta
+            %li.divider
+            %li
+              %a{:href => "http://webapplayers.com/homer_admin-v1.8/login.html"} Logout
+        #sparkline1.small-chart.m-t-sm
+          %canvas{:height => "30", :style => "display: inline-block; width: 119px; height: 30px; vertical-align: top;", :width => "119"}
+        %div
+          %h4.font-extra-bold.m-b-xs
+            200 Pontos
+    %ul#side-menu.nav
+      %li.active
+        %a{:href => "./HOMER _ WebApp admin theme_files/HOMER _ WebApp admin theme.html"}
+          %span.nav-label Dashboard
+          %span.label.label-success.pull-right v.1
+      %li
+        %a{:href => "http://webapplayers.com/homer_admin-v1.8/analytics.html"}
+          %span.nav-label Estatísticas
+          %span.label.label-warning.pull-right NEW
+      %li
+        %a{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"}
+          %span.nav-label Artigos
+          %span.fa.arrow
+        %ul.nav.nav-second-level.collapse
+          %li
+            %a{:href => "#{new_article_path}"} Novo Artigo
+          %li
+            %a{:href => "#{articles_path}"} Meus Artigos
+          %li
+            %a{:href => "#{articles_path(q: 'draft')}"} Rascunhos
+          %li
+            %a{:href => "#{new_article_path(q: 'fav')}"} Favoritos
+         
+      %li
+        %a{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"}
+          %span.nav-label Administração
+          %span.fa.arrow
+        %ul.nav.nav-second-level.collapse
+          %li
+            %a{:href => "http://webapplayers.com/homer_admin-v1.8/projects.html"} Autores
+          %li
+            %a{:href => "http://webapplayers.com/homer_admin-v1.8/contacts.html"} Categorias de Artigo
+          %li
+            %a{:href => "http://webapplayers.com/homer_admin-v1.8/project.html"} Ranking de Artigos
+
+      %li
+        %a{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"}
+          %span.nav-label Relatórios
+          %span.fa.arrow
+        %ul.nav.nav-second-level.collapse
+          %li
+            %a{:href => "http://webapplayers.com/homer_admin-v1.8/projects.html"} Estátisticas
+          %li
+            %a{:href => "http://webapplayers.com/homer_admin-v1.8/contacts.html"} Autores
