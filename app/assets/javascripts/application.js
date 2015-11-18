@@ -11,3 +11,4 @@
 //= require homer/javascripts/jquery.peity.min
 //= require homer/javascripts/index(1)
 //= require homer/javascripts/homer
+//= require redactor-rails

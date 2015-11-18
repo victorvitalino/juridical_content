@@ -1,1 +1,35 @@
-asd
+.row
+  .col-lg-12.text-center.m-t-md
+    %h2
+      Meus Artigos...
+.row
+  .col-lg-12
+    .hpanel
+      .panel-heading
+        Total de Artigos: #{@articles.count}
+      .panel-body
+        .table-responsive
+          %table.table.table-bordered.table-striped{:cellpadding => "1", :cellspacing => "1"}
+            %thead
+              %tr
+                %th Nº
+                %th Título
+                %th Data de criação
+                %th Data de atualização
+                %th Publicado?
+                %th Revisado?
+                %th Categoria
+                %th Ações
+            %tbody
+              - @articles.each do |article|
+                %tr
+                  %td.col-md-1= article.id
+                  %td.col-md-4= article.title
+                  %td= article.created_at.strftime("%d/%m/%Y às %H:%M")
+                  %td= article.updated_at.strftime("%d/%m/%Y às %H:%M")
+                  %td= article.publish ? 'Sim' : 'Não'
+                  %td= article.revised ? 'Sim' : 'Não' 
+                  %td= article.article_category.name if article.article_category.present?
+                  %td.col-md-2
+                    = link_to "editar", edit_article_path(article), class: 'btn btn-primary btn-xs'
+                    = link_to "remover", article_path(article), method: :delete, class: 'btn btn-danger btn-xs', data: { confirm: "Frase"}

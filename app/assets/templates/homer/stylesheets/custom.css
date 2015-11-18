@@ -1,0 +1,13 @@
+.redactor-editor {
+  border: none !important;
+}
+
+.redactor-toolbar {
+  box-shadow: none !important;
+}
+
+.form-article input[type='text'] {
+  border: none !important;
+  font-size: 20px;
+  color: black;
+}

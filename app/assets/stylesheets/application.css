@@ -1,5 +1,8 @@
 /*
  *= require homer/stylesheets/bootstrap
  *= require homer/stylesheets/helper
+ *= require homer/stylesheets/font-awesome
  *= require homer/stylesheets/style
- */
+ *= require redactor-rails
+ *= require homer/stylesheets/custom
+*/
