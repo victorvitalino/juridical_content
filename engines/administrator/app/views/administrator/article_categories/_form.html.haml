@@ -1,0 +1,20 @@
+= simple_form_for @category do |f|
+  .row
+    .col-md-12
+      = f.input :title, label: false, placeholder: "Digite o título da categoria"
+  %hr/
+  .row
+    .col-md-12
+      = f.input :description, label: false, placeholder: "Digite uma breve descrição sobre a categoria"
+  %hr/
+  .row
+    .col-md-4
+      = f.input :status, as: :select, placeholder: "Digite uma breve descrição sobre a categoria"
+    .col-md-4
+      = f.input :only_user, as: :select, placeholder: "Digite uma breve descrição sobre a categoria"
+    .col-md-4
+      = f.input :only_subscribes, as: :select, placeholder: "Digite uma breve descrição sobre a categoria"
+  %hr/
+  .row
+    .col-md-12
+      = f.submit "Cadastrar Categoria", class: 'btn btn-success'

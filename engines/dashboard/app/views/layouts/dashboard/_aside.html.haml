@@ -47,11 +47,11 @@
         %a{:href => "http://webapplayers.com/homer_admin-v1.8/index.html#"}
           %span.nav-label Administração
           %span.fa.arrow
-        %ul.nav.nav-second-level.collapse
+        %ul.nav.nav-second-level.collapse{class: (params[:module] == "administrator") ? 'in' : ''}
           %li
-            %a{:href => "http://webapplayers.com/homer_admin-v1.8/projects.html"} Autores
+            %a{:href => "#{administrator.users_path}"} Assinantes
           %li
-            %a{:href => "http://webapplayers.com/homer_admin-v1.8/contacts.html"} Categorias de Artigo
+            %a{:href => "#{administrator.article_categories_path}"} Categorias de Artigo
           %li
             %a{:href => "http://webapplayers.com/homer_admin-v1.8/project.html"} Ranking de Artigos
       %li
